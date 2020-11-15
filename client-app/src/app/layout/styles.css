@@ -14,3 +14,7 @@ body {
 .ui.grid {
   margin-top: 80px !important;
 }
+
+.ui.card {
+  margin-top: 70px !important;
+}
