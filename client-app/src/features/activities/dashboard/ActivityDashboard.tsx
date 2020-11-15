@@ -13,18 +13,19 @@ const ActivityDashboard: React.FC = () => {
   }, [activityStore]);
 
   if (activityStore.loadingInitial)
-    return <LoadingComponent content={"loading..."} />;
-
-  return (
-    <Grid>
-      <Grid.Column width={10}>
-        <ActivityList />
-      </Grid.Column>
-      <Grid.Column width={6}>
-        <h2>actvty</h2>
-      </Grid.Column>
-    </Grid>
-  );
+    return <LoadingComponent content={"Loading activities..."} />;
+  else
+    return (
+      <Grid>
+        <Grid.Column width={10}>
+          hey
+          <ActivityList />
+        </Grid.Column>
+        <Grid.Column width={6}>
+          <h2>Activity Filter</h2>
+        </Grid.Column>
+      </Grid>
+    );
 };
 
 export default observer(ActivityDashboard);

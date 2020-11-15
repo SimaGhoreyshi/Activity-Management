@@ -16,7 +16,7 @@ namespace Persistence
                     new Activity
                     {
                         Title = "Past Activity 1",
-                        Date = DateTime.Now.AddMonths(-2),
+                        Date = DateTime.Now.AddMonths(-1),
                         Description = "Activity 2 months ago",
                         Category = "drinks",
                         City = "London",
