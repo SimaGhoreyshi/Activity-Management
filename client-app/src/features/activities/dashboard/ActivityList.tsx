@@ -9,7 +9,6 @@ const ActivityList: React.FC = () => {
   const { activitiesByDate } = activityStore;
   return (
     <Fragment>
-      hey from list
       {activitiesByDate.map(([group, activities]) => (
         <Fragment key={group}>
           <Label size="large" color="blue">

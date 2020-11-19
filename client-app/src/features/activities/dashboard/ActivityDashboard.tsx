@@ -18,7 +18,6 @@ const ActivityDashboard: React.FC = () => {
     return (
       <Grid>
         <Grid.Column width={10}>
-          hey
           <ActivityList />
         </Grid.Column>
         <Grid.Column width={6}>

@@ -22,10 +22,10 @@ const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
 
   useEffect(() => {
     loadActivity(match.params.id);
-  }, [loadActivity, match.params.id]);
+  }, [loadActivity, match.params.id, history]);
 
-  if (loadingInitial || !activity)
-    return <LoadingComponent content="loding ...." />;
+  if (loadingInitial) return <LoadingComponent content="loding ...." />;
+  if (!activity) return <h2>not found</h2>;
   else
     return (
       <Grid>
